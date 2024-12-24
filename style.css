@@ -1,0 +1,26 @@
+body{
+    background: #000;
+}
+h2{
+    color: #fff;
+}
+p{
+    font-size: 18px;
+    color: #f8eeee;
+}
+h2,p{
+    animation: cssRuleReveal ease-in-out both;
+    animation-timeline: view();;
+    animation-range: entry 50% cover 50%;
+}
+@keyframes cssRuleReveal {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
